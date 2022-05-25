@@ -1,0 +1,11 @@
+.text-weather {
+    font-family: 'Anton', sans-serif;
+    font-size: xx-large;
+}
+
+.icon {
+        max-height: 300px;
+    max-width: 500px;
+    border: black;
+    border-radius: 55px;
+}
