@@ -7,16 +7,31 @@
     <link href="style.css" rel="stylesheet">
     <script src="./index.js"></script>
   </head>
-  <body class="bg-info">
-    <div class="input-group mb-3">
-        <input type="text" id="Zip" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="button-addon2">
-        <button onclick="addZipCodeListener()" type="button" id="addZip">Add Zip Code</button>
-        <button class="btn btn-outline-secondary" type="button" id="get-weather-data">Get Weather Data</button>
+  <body class="bg-image icon" >
+    <div >
+        <!-- <input type="text" id="Zip" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="button-addon2">
+        <button onclick="addZipCodeListener()" type="button" id="addZip">Add Zip Code</button> -->
+        <button class="btn btn-primary btn-lg btn-block m-4" type="button" id="get-weather-data">Get Weather Data</button>
       </div>
+      <div class="container-fluid ">
+        <div class="row header-bg align-items-center">
+            <div class="col text-center">
+              <img  id ="condition" src="" class="icon">
+            </div>
+            </div>
+          </div>
+      
+    
     <!-- <button class="m-4" id="get-weather-data">Get Weather Data!</button> -->
-    <pre class="text-weather m-2" id="data-results"></pre>
-    <pre class="m-2 text-weather" id="temp"></pre>
+    <div>
+    <pre class="text-weather m-2 " id="data-results"></pre>
     <pre class="m-2 text-weather" id="currentCondition"></pre>
-    <img class="m-2 icon" id ="condition" src="">
+    <pre class="m-2 text-weather" id="temp"></pre>
+    <pre class="m-2 text-weather" id="wind-direction"></pre>
+    <pre class="m-2 text-weather" id="wind-mph"></pre>
+    <pre class="m-2 text-weather" id="precipitation"></pre>
+    <pre class="m-2 text-weather" id="currentCondition"></pre>
+  </div>
+  
   </body>
 </html>

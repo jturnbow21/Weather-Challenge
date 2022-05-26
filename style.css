@@ -1,11 +1,14 @@
 .text-weather {
     font-family: 'Anton', sans-serif;
     font-size: xx-large;
+    text-align: center;
+    color: black;
 }
 
-.icon {
-        max-height: 300px;
-    max-width: 500px;
-    border: black;
-    border-radius: 55px;
+
+.bg-image {
+    background-image: url(../img/weather-5.png);
+    height: 75vh;
+    background-size: cover;
+    background-position: center;
 }

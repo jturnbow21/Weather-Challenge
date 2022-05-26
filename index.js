@@ -25,15 +25,31 @@ function attachGetWeatherDataButtonListener() {
 }
 
 function addDataToPreTag(data) {
-  const resultsPreTag = document.getElementById("data-results");
-  const resultsPreTag2 = document.getElementById("temp");
-  const currentCondition = document.getElementById("currentCondition")
+  const currentLocation = document.getElementById("data-results");
+  const currentTemp = document.getElementById("temp");
+  const currentCondition = document.getElementById("currentCondition");
+  const currentWind = document.getElementById("wind-direction");
+  const windMph = document.getElementById("wind-mph");
+  const currentPrecipitation = document.getElementById("precipitation");
+  
   const space = ", ";
   const fahrenheit = "°F";
   const currentlyItIs = "Currently it is: "
-  resultsPreTag.innerText = data.location.name + space + data.location.region;
-  resultsPreTag2.innerText = data.current.temp_f + fahrenheit;
+  const windDirectionIs = "The current wind direction is: ";
+  const windMphIs = "The wind is blowing at "
+  const mph = " miles per hour."
+  let currentPrecipitationAmount = "The current precipitation amount is: "
+  const inches = " inches."
+  
+  currentLocation.innerText = data.location.name + space + data.location.region;
+  currentTemp.innerText = data.current.temp_f + fahrenheit;
   currentCondition.innerText = currentlyItIs + data.current.condition.text;
+  currentWind.innerText = windDirectionIs + data.current.wind_dir;
+  windMph.innerText = windMphIs + data.current.wind_mph + mph;
+  currentPrecipitation.innerText = currentPrecipitationAmount + data.current.precip_in + inches;
+//   if (data.current.precip_in === 0.0) {
+// currentPrecipitationAmount == "There is no current precipitation" 
+//   }
 
   
 }
