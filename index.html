@@ -7,10 +7,12 @@
     <link href="style.css" rel="stylesheet">
     <script src="./index.js"></script>
   </head>
-  <body class="bg-image icon" >
+  <body class="bg-image" >
     <div >
         <!-- <input type="text" id="Zip" class="form-control" placeholder="Zip Code" aria-label="Zip Code" aria-describedby="button-addon2">
         <button onclick="addZipCodeListener()" type="button" id="addZip">Add Zip Code</button> -->
+          <!-- The button listed above would allow a user to input a zipcode to pull weather data. However i couldn't get it to work. The console would log the new zip code variable but wouldn't inject it. -->
+        
         <button class="btn btn-primary btn-lg btn-block m-4" type="button" id="get-weather-data">Get Weather Data</button>
       </div>
       <div class="container-fluid ">
@@ -22,7 +24,6 @@
           </div>
       
     
-    <!-- <button class="m-4" id="get-weather-data">Get Weather Data!</button> -->
     <div>
     <pre class="text-weather m-2 " id="data-results"></pre>
     <pre class="m-2 text-weather" id="currentCondition"></pre>

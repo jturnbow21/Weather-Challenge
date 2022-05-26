@@ -4,6 +4,8 @@ var ZIP_CODE = "74854"
 //   parseInt(ZIP_CODE);
 //   console.log(ZIP_CODE)
 // }
+
+// I added the above function with  a button in the html file. I could get the console to log the zip code but it wouldn't inject it into the forecast endpoint request. I'm not sure what I was doing wrong.
 const WEATHER_API_KEY = "2f941b77d49f414abfb133019221905";
 
 
@@ -47,10 +49,6 @@ function addDataToPreTag(data) {
   currentWind.innerText = windDirectionIs + data.current.wind_dir;
   windMph.innerText = windMphIs + data.current.wind_mph + mph;
   currentPrecipitation.innerText = currentPrecipitationAmount + data.current.precip_in + inches;
-//   if (data.current.precip_in === 0.0) {
-// currentPrecipitationAmount == "There is no current precipitation" 
-//   }
-
   
 }
 
