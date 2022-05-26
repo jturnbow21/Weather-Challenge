@@ -1,4 +1,4 @@
-var ZIP_CODE = "74854"
+let ZIP_CODE = "74854"
 // function addZipCodeListener () {
 //   ZIP_CODE = document.getElementById("addZip").value;
 //   parseInt(ZIP_CODE);
