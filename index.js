@@ -9,7 +9,7 @@ let ZIP_CODE = "74854"
 const WEATHER_API_KEY = "2f941b77d49f414abfb133019221905";
 
 
-const FORECAST_ENDPOINT = `http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${ZIP_CODE}&days=5`;
+const FORECAST_ENDPOINT = `https://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${ZIP_CODE}&days=5`;
 
 
 window.onload = () => {
